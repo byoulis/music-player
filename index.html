@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Music Player </title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema"><i class="fas fa-moon"></i></button>
+        <div class="disk">
+            <div class="circle"></div>
+            <div id="cover" class="cover"></div>
+        </div>
+        <div class="song-info">
+            <div class="artist-name"></div>
+            <div class="song-name"></div>
+            <div class="progress-bar">
+                <div class="fill-bar"></div>
+            </div>
+            <div class="time">0:00 - 0:00</div>
+            <div class="volume-control">
+                <i class="fas fa-volume-up volume-icon"></i>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+        <div class="controls">
+            <i id="prev" class="prev-btn fa-solid fa-backward" aria-label="Música anterior"></i>
+            <i id="play" class="play-btn fa-solid fa-play" aria-label="Tocar ou pausar"></i>
+            <i id="next" class="next-btn fa-solid fa-forward" aria-label="Próxima música"></i>
+        </div>
+        <div class="playlist">
+            <button class="playlist-toggle" aria-label="Mostrar ou ocultar playlist"><i class="fas fa-list"></i> Playlist</button>
+            <ul id="playlist-items" class="playlist-items"></ul>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+</html>
